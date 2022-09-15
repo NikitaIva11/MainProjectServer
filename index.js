@@ -4,7 +4,7 @@ const MainRoutes = require('./routes/MainRoutes/MainRoutes');
 
 const app = express()
 
-const PORT = 2700
+const PORT = process.env.PORT || 2700
 
 app.use(cors())
 app.use(express.json())
